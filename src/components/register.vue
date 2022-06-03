@@ -56,7 +56,7 @@ export default {
       user: {
         name: "",
         email: "",
-        password: "",
+        pass: "",
         isAdmin:false,
         published: false
       },
@@ -66,9 +66,9 @@ export default {
   methods: {
     saveUser() {
       let data = {
-        name: this.name,
-        email: this.email,
-        pass: this.pass,
+        name: this.user.name,
+        email: this.user.email,
+        password: this.user.pass,
       };
 
       ScheduleDataService.register(data)

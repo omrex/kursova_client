@@ -15,7 +15,7 @@ class ScheduleDataService {
     }
 
     register(data) {
-        return http.post("/register", data);
+        return http.post("/users/register", data);
     }
 
     update(id, data) {
